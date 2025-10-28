@@ -45,7 +45,7 @@ spec:
     #name of the ClusterClass object to derive the topology
     class: builtin-generic-v3.5.0
     #kubernetes version of the cluster 
-    version: v1.34.1---vmware.1-vkr.1
+    version: v1.34.1---vmware.1-vkr.4
     #describe the cluster control plane
     controlPlane:
       #number of control plane nodes
