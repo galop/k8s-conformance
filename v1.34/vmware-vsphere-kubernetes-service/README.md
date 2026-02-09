@@ -43,9 +43,9 @@ spec:
   #specify the topology for the cluster
   topology:
     #name of the ClusterClass object to derive the topology
-    class: builtin-generic-v3.5.0
+    class: builtin-generic-v3.6.0
     #kubernetes version of the cluster 
-    version: v1.34.1---vmware.1-vkr.1
+    version: v1.34.2---vmware.2-vkr.2
     #describe the cluster control plane
     controlPlane:
       #number of control plane nodes
@@ -79,8 +79,8 @@ spec:
 * Monitor the provisioning of the cluster.
   ```shell
   $ kubectl get cluster -n vks-cluster-ns
-  NAME              CLUSTERCLASS             PHASE         AGE   VERSION
-  vks-conformance   builtin-generic-v3.5.0   Provisioned   13m   v1.34.1+vmware.1
+  NAMESPACE   NAME    CLUSTERCLASS             PHASE         AGE   VERSION
+  vks-cluster-ns       vks-conformance   builtin-generic-v3.6.0   Provisioned   13m   v1.34.2+vmware.2-vkr.2
   ```
 * When the cluster Phase changes to Provisioned state, log in to the cluster using the vSphere Plugin for kubectl.
   ```shell
